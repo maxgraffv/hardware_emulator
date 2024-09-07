@@ -9,5 +9,13 @@ int main()
 	OR_Gate or_gate(0, 1);
 	LED led2(or_gate.getValue() );
 
+	NOT_Gate not_gate(1);
+	LED led3(not_gate.getValue() );
+
+    // LED led4();
+    // LED led5();
+    // LED led6();
+    // LED led7();
+
     return 0;
 }
