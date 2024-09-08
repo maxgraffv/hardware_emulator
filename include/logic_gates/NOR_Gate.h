@@ -1,7 +1,7 @@
 #ifndef NOR_GATE_H
 #define NOR_GATE_H
 
-#include "Transistor.h"
+#include "../elements/Transistor.h"
 
 class NOR_Gate
 {

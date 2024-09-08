@@ -1,7 +1,7 @@
 #ifndef XNOR_GATE_H
 #define XNOR_GATE_H
 
-#include "Transistor.h"
+#include "../elements/Transistor.h"
 
 class XNOR_Gate
 {

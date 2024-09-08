@@ -1,5 +1,4 @@
 #include "NOT_Gate.h"
-#include "Transistor.h"
 
 NOT_Gate::NOT_Gate( bool input) : value(true)
 {

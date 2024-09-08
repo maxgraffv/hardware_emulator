@@ -1,7 +1,7 @@
 #ifndef OR_GATE_H
 #define OR_GATE_H
 
-#include "Transistor.h"
+#include "../elements/Transistor.h"
 
 class OR_Gate
 {

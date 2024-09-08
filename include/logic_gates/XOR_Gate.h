@@ -1,7 +1,7 @@
 #ifndef XOR_GATE_H
 #define XOR_GATE_H
 
-#include "Transistor.h"
+#include "../elements/Transistor.h"
 
 class XOR_Gate
 {

@@ -1,6 +1,8 @@
 #ifndef NOT_GATE_H
 #define NOT_GATE_H
 
+#include "../elements/Transistor.h"
+
 class NOT_Gate
 {
     private:
