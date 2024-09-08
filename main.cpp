@@ -1,17 +1,34 @@
 #include "include/hardware_emulator.h"
+#include <iostream>
 
 int main()
 {
 
-   XNOR_Gate g1(0,0);
-   XNOR_Gate g2(0,1);
-   XNOR_Gate g3(1,0);
-   XNOR_Gate g4(1,1);
 
-   LED l1(g1.getValue());
-   LED l2(g2.getValue());
-   LED l3(g3.getValue());
-   LED l4(g4.getValue());
+    D_FlipFlop d1(false, false);
+    D_FlipFlop d2(false, false);
+    D_FlipFlop d3(false, false);
+    D_FlipFlop d4(false, false);
+
+    bool clk = false;
+    bool data = false;
+
+    for(int i = 0; i < 8; i++)
+    {
+            d1 = D_FlipFlop(data, clk);
+            d2 = D_FlipFlop(d1.getQ(), clk);
+            d3 = D_FlipFlop(d2.getQ(), clk);
+            d4 = D_FlipFlop(d3.getQ(), clk);
+
+            if(clk)
+                clk = false;
+            else
+                clk = true;
+    }
+
+    std::cout << "4b binary: " << 
+        d1.getQ() << d2.getQ() << d3.getQ() << d4.getQ() 
+    << std::endl;
 
     return 0;
 }
