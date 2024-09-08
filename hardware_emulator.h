@@ -6,6 +6,7 @@
 #include "AND_Gate.h"
 #include "OR_Gate.h"
 #include "NOT_Gate.h"
+#include "NAND_Gate.h"
 
 
 

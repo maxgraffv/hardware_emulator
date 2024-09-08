@@ -3,14 +3,17 @@
 int main()
 {
 
-    AND_Gate and_gate1( 1, 1);
-	LED led1(and_gate1.getValue() );
+   NAND_Gate g1(0,0);
+   NAND_Gate g2(0,1);
+   NAND_Gate g3(1,0);
+   NAND_Gate g4(1,1);
 
-	OR_Gate or_gate(0, 1);
-	LED led2(or_gate.getValue() );
+   LED l1(g1.getValue());
+   LED l2(g2.getValue());
+   LED l3(g3.getValue());
+   LED l4(g4.getValue());
 
-	NOT_Gate not_gate(1);
-	LED led3(not_gate.getValue() );
+
 
     // LED led4();
     // LED led5();
