@@ -8,6 +8,8 @@
 #include "NOT_Gate.h"
 #include "NAND_Gate.h"
 #include "NOR_Gate.h"
+#include "XOR_Gate.h"
+#include "XNOR_Gate.h"
 
 
 
