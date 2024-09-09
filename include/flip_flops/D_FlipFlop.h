@@ -13,6 +13,7 @@ class D_FlipFlop
         bool notQ;
 
     public:
+        D_FlipFlop();
         D_FlipFlop( bool input_D, bool input_CLK);
         bool getQ();
         bool getNotQ();

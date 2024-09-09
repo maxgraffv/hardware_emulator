@@ -1,5 +1,11 @@
 #include "D_FlipFlop.h"
 
+
+D_FlipFlop::D_FlipFlop()
+{
+    D_FlipFlop(false, false);
+}
+
 D_FlipFlop::D_FlipFlop( bool input_D, bool input_CLK)
     :D(false), CLK(false), Q(false), notQ(true)
 {
